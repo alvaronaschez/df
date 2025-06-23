@@ -1,0 +1,98 @@
+# notes about installation process
+
+## very basics
+``` bash
+  sudo apt install \
+    git \
+    curl \
+    stow \
+    vim-gtk3 \
+    kakoune \
+    podman \
+    sway \
+    swaylock \
+    firefox-esr \
+```
+
+networking
+``` bash
+  sudo apt install \
+    network-manager network-manager-config-connectivity-debian
+```
+- edit /etc/network/interfaces and comment out wifi lines
+- run nmtui to establish connection again
+- reboot
+https://wiki.debian.org/NetworkConfiguration
+
+utils
+``` bash
+  sudo apt install \
+    fzf \
+    ripgrep \
+    btop \
+    fastfetch \
+    nnn \
+```
+
+hw
+``` bash
+  sudo apt install \
+    network-manager \
+    network-manager-config-connectivity-debian \
+    pulsemixer \
+    blueman \
+    printer-driver-gutenprint \
+    grimshot \
+    brightnessctl \
+```
+
+media
+``` bash
+    evince \
+    nautilus \
+    foliate \
+    vlc \
+    obs-studio
+```
+
+## zellij # not in apt repos
+
+## install one nerdfont in ~/.local/share/fonts
+
+
+brightnessctl?
+
+### optional
+``` bash
+  sudo apt install \
+    pipx \
+    qemu-system \
+    libfirt-daemon-system \
+    virt-manager \
+    wdisplays \
+    emacs \
+    helix \
+    
+    vlc \
+    obs-studio \
+    evince \
+    nautilus \
+    foliate \
+    
+    net-tools \
+    pamixer \
+    pulseaudio-utils \
+    
+    # not sure if required \
+    libspa-0.2-bluetooth # https://askubuntu.com/a/1480049 \
+```
+
+- generate ssh key
+``` bash
+  git remote set-url origin git@github.com:alvaronaschez/df.git
+```
+
+- this is needed so virt-manager works properly
+```
+sudo usermod -aG libvirt $USER && sudo usermod -aG kvm $USER
+```

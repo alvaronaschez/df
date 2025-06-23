@@ -1,0 +1,13 @@
+
+nmtui
+pulsemixer
+blueman-manager
+chafa
+
+nnn
+fastfetch
+btop
+
+gtklock
+wl-copy
+

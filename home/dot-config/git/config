@@ -1,0 +1,9 @@
+[user]
+	name = Alvaro Sanchez
+	email = alvarosanchezpalomino@gmail.com
+[init]
+	defaultBranch = master
+[core]
+	pager=less
+[push]
+	autoSetupRemote = true
