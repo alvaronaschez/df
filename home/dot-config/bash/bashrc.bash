@@ -1,3 +1,36 @@
+EDITOR=kak
+
+#set -o vi # already set in ~/.inputrc
+PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
+
+if [[ $PATH != *':/usr/sbin'* ]]; then
+  PATH="$PATH:/usr/sbin"
+fi
+
+# apt
+alias update='sudo apt update -y && sudo apt upgrade -y'
+alias clean='sudo apt autoremove && sudo apt autoclean'
+alias install='sudo apt install'
+alias uninstall='sudo apt purge'
+
+# ls
+alias l='ls -al'
+alias la='ls -a'
+alias ll='ls -l'
+
+# help
+alias h='cat ~/help.txt'
+
+# apps
+BASHRC='~/.config/bash/bashrc.bash'
+alias ebash="$EDITOR $BASHRC"
+alias sbash="source $BASHRC"
+
+alias esway="$EDITOR ~/.config/sway/config"
+alias ssway='sway reload'
+
+alias ekak="$EDITOR ~/.config/kak/kakrc"
+
 if [ "$TERM" = "linux" ]; then
   echo -en "\e]P0232323"
   echo -en "\e]P82B2B2B"
@@ -16,20 +49,5 @@ if [ "$TERM" = "linux" ]; then
   echo -en "\e]p7e5e5e5"
   echo -en "\e]p000000"
   clear
-fi
-
-alias update='sudo apt-get update -y && sudo apt-get upgrade -y'
-
-alias l='ls -al'
-alias la='ls -a'
-alias ll='ls -l'
-
-alias h='cat ~/help.txt'
-
-#set -o vi # already set in ~/.inputrc
-PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
-
-if [[ $PATH != *':/usr/sbin'* ]]; then
-  PATH="$PATH:/usr/sbin"
 fi
 
