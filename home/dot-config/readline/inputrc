@@ -11,3 +11,5 @@ $else
 $endif
 Control-l: clear-screen
 
+set keyseq-timeout 0
+

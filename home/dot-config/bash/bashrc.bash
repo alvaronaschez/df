@@ -18,13 +18,29 @@ alias l='ls -al'
 alias la='ls -a'
 alias ll='ls -l'
 
+# git
+alias gp='git push'
+alias gf='git push force --with-lease'
+alias gss='git status --short'
+alias gst='git status'
+
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # help
 alias h='cat ~/help.txt'
 
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
 alias ebash="$EDITOR $BASHRC"
-alias sbash="source $BASHRC"
+alias sbash="source ~/.bashrc"
+
+READLINE='~/.config/readline/inputrc'
+alias ereadline="$EDITOR $READLINE"
+alias sreadline="bind -f ~/.inputrc"
 
 alias esway="$EDITOR ~/.config/sway/config"
 alias ssway='sway reload'
