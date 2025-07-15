@@ -31,6 +31,7 @@ alias gss='git status --short'
 alias gst='git status'
 alias gd='git diff'
 alias gcm='git commit -m'
+alias gaa='git add .'
 
 # cd
 alias ..='cd ..'
