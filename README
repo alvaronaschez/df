@@ -13,7 +13,7 @@ sudo vi /etc/apt/sources.list
 
 sudo vi /etc/default/grub
 # GRUB_BACKGROUND=/home/alvaro/df/home/docs/backgrounds/deb1.png
-update-grub
+sudo update-grub
 
 ## very basics
 ``` bash
@@ -24,8 +24,8 @@ update-grub
     vim-gtk3 \
     kakoune \
     podman \
-    sway swaylock swayidle xsway \
-    firefox-esr \
+    sway swaylock swayidle xwayland \
+    firefox-esr chromium \
 ```
 
 networking
@@ -45,7 +45,9 @@ utils
     ripgrep \
     btop \
     fastfetch \
-    nnn \
+    wl-clipboard \
+    bat \
+    trash-cli
 ```
 
 hw
@@ -53,7 +55,7 @@ hw
   sudo apt install \
     network-manager \
     network-manager-config-connectivity-debian \
-    pulsemixer \
+    pulsemixer pamixer \
     blueman \
     printer-driver-gutenprint \
     grimshot \
@@ -66,12 +68,14 @@ media
     nautilus \
     foliate \
     vlc \
-    obs-studio
+    obs-studio \
+    chafa
 ```
 
 ## zellij # not in apt repos
 
 ## install one nerdfont in ~/.local/share/fonts
+# install 3270 nerdfont
 
 
 brightnessctl?

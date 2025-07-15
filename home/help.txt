@@ -8,6 +8,5 @@ nnn
 fastfetch
 btop
 
-gtklock
 wl-copy
 
