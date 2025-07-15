@@ -7,22 +7,30 @@ if [[ $PATH != *':/usr/sbin'* ]]; then
   PATH="$PATH:/usr/sbin"
 fi
 
+PATH="$PATH:$HOME/.cargo/bin"
+
 # apt
-alias update='sudo apt update -y && sudo apt upgrade -y'
-alias clean='sudo apt autoremove && sudo apt autoclean'
-alias install='sudo apt install'
-alias uninstall='sudo apt purge'
+alias update='sudo apt-get update -y && sudo apt-get dist-upgrade -y'
+alias clean='sudo apt-get autopurge'
+alias install='sudo apt-get install'
+alias uninstall='sudo apt-get purge'
 
 # ls
 alias l='ls -al'
 alias la='ls -a'
 alias ll='ls -l'
 
+# trash
+alias dl='trash-put'
+alias del='trash-put'
+
 # git
 alias gp='git push'
 alias gf='git push force --with-lease'
 alias gss='git status --short'
 alias gst='git status'
+alias gd='git diff'
+alias gcm='git commit -m'
 
 # cd
 alias ..='cd ..'
@@ -32,6 +40,10 @@ alias .....='cd ../../../..'
 
 # help
 alias h='cat ~/help.txt'
+
+# misc
+#alias battery='upower -e | head -1 | xargs upower -i'
+alias power='upower -e | head -1 | xargs upower -i | awk '\''/percentage:/ {p=$2}; /state:/ {s=$2}; END{print p" "s}'\'
 
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
@@ -66,4 +78,6 @@ if [ "$TERM" = "linux" ]; then
   echo -en "\e]p000000"
   clear
 fi
+
+. "$HOME/.cargo/env"
 
