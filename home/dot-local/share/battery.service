@@ -1,0 +1,11 @@
+[Unit]
+Description=Set the external battery charge threshold
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/alvaro/.local/bin/battery_service.sh
+
+[Install]
+WantedBy=multi-user.target
+
