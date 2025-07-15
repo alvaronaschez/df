@@ -60,11 +60,7 @@ hw
     printer-driver-gutenprint \
     grimshot \
     brightnessctl \
-    tlp powertop \ # power management
 ```
-after installing tlp run `sudo systemctl enable tlp`
-to configure it edit `/etc/tlp.conf`
-run `sudo systemctl restart tlp`
 
 media
 ``` bash
