@@ -5,6 +5,8 @@ add-highlighter global/ number-lines -relative -hlcursor
 add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-matching
 
+add-highlighter global/ column 80 StatusLine
+
 
 # kak-lsp
 #if [ -x "$(command -v kak-lsp)" ]; then
@@ -25,6 +27,8 @@ add-highlighter global/ show-matching
   map global object t '<a-semicolon>lsp-object Class Interface Struct<ret>' -docstring 'LSP class interface or struct'
   map global object d '<a-semicolon>lsp-diagnostic-object --include-warnings<ret>' -docstring 'LSP errors and warnings'
   map global object D '<a-semicolon>lsp-diagnostic-object<ret>' -docstring 'LSP errors'
+
+  #set global lsp_debug true
 
 #fi
 

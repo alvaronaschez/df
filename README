@@ -76,6 +76,7 @@ media
 
 ## install one nerdfont in ~/.local/share/fonts
 # install 3270 nerdfont
+`sudo apt install fonts-symbola`
 
 
 brightnessctl?
