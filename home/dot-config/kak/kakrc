@@ -4,8 +4,11 @@ colorscheme lucius
 add-highlighter global/ number-lines -relative -hlcursor
 add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-matching
-
 add-highlighter global/ column 80 StatusLine
+
+set-option global ui_options terminal_assistant=none
+set-option global scrolloff 5,5
+set-option global autoreload yes
 
 
 # kak-lsp

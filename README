@@ -26,6 +26,7 @@ sudo update-grub
     podman \
     sway swaylock swayidle xwayland \
     firefox-esr chromium \
+    make gcc g++ clangd
 ```
 
 networking
