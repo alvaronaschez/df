@@ -1,0 +1,3 @@
+[submodule "vis-lspc"]
+	path = vis-lspc
+	url = https://github.com/fischerling/vis-lspc
