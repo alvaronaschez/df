@@ -2,7 +2,7 @@ colorscheme lucius
 # colorscheme tomorrow-night
 
 add-highlighter global/ number-lines -relative -hlcursor
-add-highlighter global/ number-lines -hlcursor
+# add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-matching
 add-highlighter global/ column 80 StatusLine
 
