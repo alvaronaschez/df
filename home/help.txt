@@ -1,6 +1,6 @@
 
 nmtui
-pulsemixer
+pavucontrol
 blueman-manager
 chafa
 
