@@ -1,10 +1,12 @@
-colorscheme lucius
+# colorscheme lucius
 # colorscheme tomorrow-night
+colorscheme black-on-white
 
 add-highlighter global/ number-lines -relative -hlcursor
 # add-highlighter global/ number-lines -hlcursor
 add-highlighter global/ show-matching
-add-highlighter global/ column 80 StatusLine
+#add-highlighter global/ column 80 StatusLine
+add-highlighter global/ column 80 MenuBackground
 
 set-option global ui_options terminal_assistant=none
 set-option global scrolloff 5,5

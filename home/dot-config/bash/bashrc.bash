@@ -1,4 +1,4 @@
-EDITOR=kak
+EDITOR=vis
 
 #set -o vi # already set in ~/.inputrc
 PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
@@ -26,7 +26,7 @@ alias del='trash-put'
 
 # git
 alias gp='git push'
-alias gf='git push force --with-lease'
+alias gpf='git push --force-with-lease'
 alias gss='git status --short'
 alias gst='git status'
 alias gd='git diff'
