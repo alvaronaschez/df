@@ -27,11 +27,15 @@ alias del='trash-put'
 # git
 alias gp='git push'
 alias gpf='git push --force-with-lease'
+alias gp!='git push --force'
 alias gss='git status --short'
 alias gst='git status'
 alias gd='git diff'
 alias gcm='git commit -m'
+alias gc='git commit -m'
 alias gaa='git add .'
+alias gca='git commit --amend --no-edit'
+alias gl='git log --oneline'
 
 # cd
 alias ..='cd ..'
