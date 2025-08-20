@@ -22,4 +22,7 @@ vis.events.subscribe(vis.events.WIN_OPEN, function(win) -- luacheck: no unused a
 	vis:command('set colorcolumn 80')
 	vis:command('set cursorline on')
 	vis:command('set ignorecase on')
+	--vis:command('set change256colors on')
+	--vis:command('set change256colors off')
+	vis:command('set tabwidth 2')
 end)

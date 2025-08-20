@@ -52,6 +52,7 @@ alias power='upower -e | head -1 | xargs upower -i | awk '\''/percentage:/ {p=$2
 alias tm=tmux
 
 alias vis='TERM=tmux-256color vis'
+alias evis="$EDITOR ~/.config/vis/visrc.lua"
 
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
