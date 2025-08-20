@@ -49,6 +49,7 @@ alias h='cat ~/help.txt'
 # misc
 #alias battery='upower -e | head -1 | xargs upower -i'
 alias power='upower -e | head -1 | xargs upower -i | awk '\''/percentage:/ {p=$2}; /state:/ {s=$2}; END{print p" "s}'\'
+alias tm=tmux
 
 alias vis='TERM=tmux-256color vis'
 

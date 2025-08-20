@@ -10,3 +10,7 @@ btop
 
 wl-copy
 
+lsblk
+sudo mkdir /media/kobo
+sudo mount /dev/sda /media/kobo
+sudo umount /media/kobo
