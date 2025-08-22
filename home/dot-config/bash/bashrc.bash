@@ -21,6 +21,7 @@ alias uninstall='sudo apt-get purge'
 alias l='ls -al'
 alias la='ls -a'
 alias ll='ls -l'
+alias l1='ls -1'
 
 # trash
 alias dl='trash-put'
