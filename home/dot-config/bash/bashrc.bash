@@ -1,4 +1,5 @@
 EDITOR=nv
+export EXINIT="et noshape | set noorder | set nohl | set td=+2" 
 alias e=$EDITOR
 
 #set -o vi # already set in ~/.inputrc
