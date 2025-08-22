@@ -1,7 +1,8 @@
-EDITOR=vis
+EDITOR=nv
+alias e=$EDITOR
 
 #set -o vi # already set in ~/.inputrc
-PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
+#PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
 
 if [[ $PATH != *':/usr/sbin'* ]]; then
   PATH="$PATH:/usr/sbin"
