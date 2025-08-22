@@ -54,6 +54,10 @@ alias tm=tmux
 alias vis='TERM=tmux-256color vis'
 alias evis="$EDITOR ~/.config/vis/visrc.lua"
 
+alias nv='~/src/neatvi/vi'
+alias neatvi='~/src/neatvi/vi'
+alias nextvi='~/src/nextvi/vi'
+
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
 alias ebash="$EDITOR $BASHRC"
