@@ -1,5 +1,5 @@
 EDITOR=nv
-export EXINIT="et noshape | set noorder | set nohl | set td=+2" 
+export EXINIT="set noshape | set noorder | set nohl | set td=+2" 
 alias e=$EDITOR
 
 #set -o vi # already set in ~/.inputrc
@@ -57,8 +57,8 @@ alias tm=tmux
 alias vis='TERM=tmux-256color vis'
 alias evis="$EDITOR ~/.config/vis/visrc.lua"
 
-alias nv='~/src/neatvi/vi'
 alias neatvi='~/src/neatvi/vi'
+alias vi=neatvi
 
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
