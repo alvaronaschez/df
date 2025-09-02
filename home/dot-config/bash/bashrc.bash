@@ -1,6 +1,8 @@
-EDITOR=nv
+EDITOR=neatvi
 export EXINIT="set noshape | set noorder | set nohl | set td=+2" 
 alias e=$EDITOR
+
+alias bee=~/ws/bee/bee
 
 #set -o vi # already set in ~/.inputrc
 #PS0="\e[2 q" # restore cursor to block before entering app (eg. vim)
@@ -28,6 +30,7 @@ alias dl='trash-put'
 alias del='trash-put'
 
 # git
+alias glazy='gaa && gcm stuff && gp'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
 alias gp!='git push --force'
@@ -95,4 +98,5 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 . "$HOME/.cargo/env"
+export PATH=$PATH:/usr/local/go/bin
 

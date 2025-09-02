@@ -12,7 +12,8 @@ vis.events.subscribe(vis.events.INIT, function()
 	--vis:command('set shell /usr/bin/bash')
 	--vis:command('set theme base16-circus')
 	--vis:command('set theme seti')
-	vis:command('set theme minimal-light')
+	--vis:command('set theme minimal-light')
+	vis:command('set theme minimal-dark')
 end)
 
 vis.events.subscribe(vis.events.WIN_OPEN, function(win) -- luacheck: no unused args
