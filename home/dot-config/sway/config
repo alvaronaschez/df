@@ -40,12 +40,15 @@ set $bg "~/docs/backgrounds/mountain.jpg"
 set $lockimg "~/df/home/docs/backgrounds/deb1.png"
 
 output * bg $bg fill
-# samsung tv
-output DP-2 resolution 1920x1080 position 1200,0
-# hp monitor
-output HDMI-A-1 transform 270 resolution 1920x1200 position 0,0
-# laptop screen
-output eDP-1 resolution 1920x1200 position 1200,1200
+output eDP-1 {
+  pos 0,1080
+  res 1920x1200
+}
+output HDMI-A-1 {
+  pos 0,0
+  res 1920x1080
+}
+
 
 ### Idle configuration
 #
