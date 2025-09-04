@@ -1,5 +1,5 @@
-EDITOR=neatvi
-export EXINIT="set noshape | set noorder | set nohl | set td=+2" 
+alias nv="EXINIT=set\ relativenumber nvim"
+EDITOR=nv
 alias e=$EDITOR
 
 alias bee=~/ws/bee/bee
