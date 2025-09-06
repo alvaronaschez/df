@@ -1,3 +1,5 @@
+alias neatvi='~/src/neatvi/vi'
+alias vi="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
 alias nv="EXINIT=set\ relativenumber nvim"
 EDITOR=nv
 alias e=$EDITOR
@@ -60,8 +62,6 @@ alias tm=tmux
 alias vis='TERM=tmux-256color vis'
 alias evis="$EDITOR ~/.config/vis/visrc.lua"
 
-alias neatvi='~/src/neatvi/vi'
-alias vi=neatvi
 
 # apps
 BASHRC='~/.config/bash/bashrc.bash'
