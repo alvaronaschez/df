@@ -1,3 +1,6 @@
 [submodule "home/dot-config/vis/plugins/vis-lspc"]
 	path = home/dot-config/vis/plugins/vis-lspc
 	url = https://github.com/alvaronaschez/vis-lspc
+[submodule "home/dot-config/nvim/pack/nvim/start/nvim-lspconfig"]
+	path = home/dot-config/nvim/pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
