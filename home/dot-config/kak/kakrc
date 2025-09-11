@@ -9,7 +9,7 @@ add-highlighter global/ show-matching
 add-highlighter global/ column 80 MenuBackground
 
 set-option global ui_options terminal_assistant=none
-set-option global scrolloff 5,5
+#set-option global scrolloff 5,5
 set-option global autoreload yes
 
 

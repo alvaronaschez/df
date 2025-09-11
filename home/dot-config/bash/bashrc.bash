@@ -1,9 +1,6 @@
 alias neatvi='~/src/neatvi/vi'
 alias vi="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
-STS=2
-alias vim="EXINIT=set\ rnu\ noet\ sts=$STS\ sw=$STS\ cb=unnamedplus\ ic\
-\  nvim"
-EDITOR=vim
+EDITOR=nvim
 alias e=$EDITOR
 
 alias bee=~/ws/bee/bee
