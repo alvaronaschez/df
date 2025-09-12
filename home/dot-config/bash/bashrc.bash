@@ -2,6 +2,7 @@ alias neatvi='~/src/neatvi/vi'
 alias vi="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
 EDITOR=nvim
 alias e=$EDITOR
+alias nv=nvim
 
 alias bee=~/ws/bee/bee
 
