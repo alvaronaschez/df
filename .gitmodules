@@ -4,3 +4,9 @@
 [submodule "home/dot-config/nvim/pack/nvim/start/nvim-lspconfig"]
 	path = home/dot-config/nvim/pack/nvim/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "home/dot-config/nvim/pack/nvim/start/vim-fugitive"]
+	path = home/dot-config/nvim/pack/nvim/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "home/dot-config/nvim/pack/nvim/start/vim-signify"]
+	path = home/dot-config/nvim/pack/nvim/start/vim-signify
+	url = https://github.com/mhinz/vim-signify
