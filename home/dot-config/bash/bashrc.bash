@@ -100,3 +100,5 @@ fi
 . "$HOME/.cargo/env"
 export PATH=$PATH:/usr/local/go/bin
 
+XDG_SESSION_TYPE=wayland
+XDG_CURRENT_DESKTOP=wayland

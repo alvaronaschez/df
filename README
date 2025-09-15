@@ -74,6 +74,13 @@ media
     chafa
 ```
 
+share screen
+``` bash
+    pipewire \
+    xdg-desktop-portal-wlr
+```
+
+
 ## zellij # not in apt repos
 
 ## install one nerdfont in ~/.local/share/fonts
