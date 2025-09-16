@@ -14,3 +14,11 @@ lsblk
 sudo mkdir /media/kobo
 sudo mount /dev/sda /media/kobo
 sudo umount /media/kobo
+
+============
+= (neo)vim =
+============
+:h diagnostic.txt
+<C-w>d		shows diagnostic message
+:h omnicompletion
+<C-x><C-o>	opens completion dialog

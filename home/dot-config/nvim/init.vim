@@ -1,4 +1,5 @@
 set nu rnu ic scs noet sts=2 sw=2 cb=unnamedplus bg=light
+"set nu rnu ic scs noet sts=4 sw=4 cb=unnamedplus bg=light
 lua << EOF
 vim.lsp.enable('clangd')
 vim.lsp.enable('jdtls')
