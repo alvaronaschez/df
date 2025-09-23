@@ -124,3 +124,9 @@ brightnessctl?
 ```
 sudo usermod -aG libvirt $USER && sudo usermod -aG kvm $USER
 ```
+
+- add opendns to the following file
+```
+sudo vi /etc/resolv.conf
+```
+

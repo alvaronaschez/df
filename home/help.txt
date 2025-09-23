@@ -1,4 +1,4 @@
-
+wl-copy
 nmtui
 pavucontrol
 blueman-manager
@@ -8,14 +8,13 @@ nnn
 fastfetch
 btop
 
-wl-copy
-
+= mount devices =
+=================
 lsblk
 sudo mkdir /media/kobo
 sudo mount /dev/sda /media/kobo
 sudo umount /media/kobo
 
-============
 = (neo)vim =
 ============
 :h diagnostic.txt
@@ -23,7 +22,6 @@ sudo umount /media/kobo
 :h omnicompletion
 <C-x><C-o>	opens completion dialog
 
-=======
 = git =
 =======
 # add submodule
