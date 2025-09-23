@@ -22,3 +22,16 @@ sudo umount /media/kobo
 <C-w>d		shows diagnostic message
 :h omnicompletion
 <C-x><C-o>	opens completion dialog
+
+=======
+= git =
+=======
+# add submodule
+git submodule add https://module/url path/to/module
+
+# update submodule
+git submodule update --init --recursive path/to/module
+
+# delete submodule
+git submodule deinit path/to/module
+git rm path/to/module

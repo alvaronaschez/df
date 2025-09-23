@@ -7,3 +7,6 @@
 [submodule "home/dot-config/nvim/pack/nvim/start/vim-fugitive"]
 	path = home/dot-config/nvim/pack/nvim/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "home/dot-config/nvim/pack/nvim/start/gitsigns.nvim"]
+	path = home/dot-config/nvim/pack/nvim/start/gitsigns.nvim
+	url = https://github.com/lewis6991/gitsigns.nvim
