@@ -9,7 +9,8 @@ sudo apt install git
 git clone https://github.com/alvaronaschez/df
 
 sudo vi /etc/apt/sources.list
-# add contrib to the main repo
+# add contrib and non-free to the main repo
+deb http://deb.debian.org/debian/ trixie main non-free-firmware contrib non-free
 
 sudo vi /etc/default/grub
 # GRUB_BACKGROUND=/home/alvaro/df/home/docs/backgrounds/deb1.png
@@ -128,5 +129,11 @@ sudo usermod -aG libvirt $USER && sudo usermod -aG kvm $USER
 - add opendns to the following file
 ```
 sudo vi /etc/resolv.conf
+```
+it doesn't work because of NetworkManager
+do this instead:
+add the dns using nmtui and then:
+``` bash
+service NetworkManager restart
 ```
 

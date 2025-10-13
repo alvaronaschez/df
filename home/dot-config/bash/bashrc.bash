@@ -1,8 +1,11 @@
+cd ~/ws/bee
 alias neatvi='~/src/neatvi/vi'
 alias vi="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
+alias nvi=neatvi
 EDITOR=nvim
 alias e=$EDITOR
 alias nv=nvim
+alias sim='~/src/sim/sim'
 
 alias bee=~/ws/bee/bee
 
@@ -22,10 +25,12 @@ alias install='sudo apt-get install'
 alias uninstall='sudo apt-get purge'
 
 # ls
-alias l='ls -al'
+alias l='ls -a1'
 alias la='ls -a'
 alias ll='ls -l'
+alias lla='ls -la'
 alias l1='ls -1'
+alias lo=l1
 
 # trash
 alias dl='trash-put'

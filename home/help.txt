@@ -3,6 +3,7 @@ nmtui
 pavucontrol
 blueman-manager
 chafa
+zathura
 
 nnn
 fastfetch
