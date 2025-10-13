@@ -1,11 +1,11 @@
-cd ~/ws/bee
+#cd ~/ws/bee
 alias neatvi='~/src/neatvi/vi'
-alias vi="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
+#alias v="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
 alias nvi=neatvi
-EDITOR=nvim
+EDITOR=vi
 alias e=$EDITOR
 alias nv=nvim
-alias sim='~/src/sim/sim'
+#alias sim='~/src/sim/sim'
 
 alias bee=~/ws/bee/bee
 
@@ -101,9 +101,6 @@ if [ "$TERM" = "linux" ]; then
   echo -en "\e]p000000"
   clear
 fi
-
-. "$HOME/.cargo/env"
-export PATH=$PATH:/usr/local/go/bin
 
 XDG_SESSION_TYPE=wayland
 XDG_CURRENT_DESKTOP=wayland

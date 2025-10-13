@@ -1,12 +1,15 @@
 # notes about installation process
+sudo apt install git
+git clone https://github.com/alvaronaschez/df
+cd df
+git submodule update --init --recursive
+# or git clone --recurse-submodules https://github.com/alvaronaschez/df
 
 sudo vi /etc/default/console-setup
 # man console-setup
 # ls /usr/share/consolefonts/
-## FONTFACE="DejaVu"
-## FONTSIZE="30x16"
-sudo apt install git
-git clone https://github.com/alvaronaschez/df
+## FONTFACE="Fixed"
+## FONTSIZE="16x32"
 
 sudo vi /etc/apt/sources.list
 # add contrib and non-free to the main repo
@@ -22,8 +25,6 @@ sudo update-grub
     git \
     curl \
     stow \
-    vim-gtk3 \
-    kakoune \
     podman \
     sway swaylock swayidle xwayland \
     firefox-esr chromium \
@@ -49,15 +50,14 @@ utils
     fastfetch \
     wl-clipboard \
     bat \
-    trash-cli
+    trash-cli\
+    unzip
 ```
 
 hw
 ``` bash
   sudo apt install \
     adwaita-icon-theme adwaita-icon-theme-legacy \
-    network-manager \
-    network-manager-config-connectivity-debian \
     pavucontrol pamixer \
     blueman \
     printer-driver-gutenprint \
@@ -72,7 +72,8 @@ media
     foliate \
     vlc \
     obs-studio \
-    chafa
+    chafa \
+    zathura
 ```
 
 share screen
@@ -82,14 +83,14 @@ share screen
 ```
 
 
-## zellij # not in apt repos
-
 ## install one nerdfont in ~/.local/share/fonts
 # install 3270 nerdfont
 `sudo apt install fonts-symbola`
 
-
-brightnessctl?
+## text editors (install them from source)
+nvim
+neatvi
+sim
 
 ### optional
 ``` bash
@@ -100,19 +101,11 @@ brightnessctl?
     virt-manager \
     wdisplays \
     emacs \
-    helix \
     
-    vlc \
-    obs-studio \
-    evince \
-    nautilus \
-    foliate \
-    
-    net-tools \
-    pamixer \
-    pulseaudio-utils \
     
     # not sure if required \
+    net-tools \
+    pulseaudio-utils \
     libspa-0.2-bluetooth # https://askubuntu.com/a/1480049 \
 ```
 
