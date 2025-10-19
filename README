@@ -51,7 +51,8 @@ utils
     wl-clipboard \
     bat \
     trash-cli\
-    unzip
+    unzip \
+    manpages manpages-dev manpages-posix manpages-posix-dev gcc-doc
 ```
 
 hw

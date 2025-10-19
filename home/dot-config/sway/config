@@ -39,8 +39,8 @@ include /etc/sway/config-vars.d/*
 set $bg "~/docs/backgrounds/mountain.jpg"
 set $lockimg "~/df/home/docs/backgrounds/deb1.png"
 set $builtin eDP-1
-set $external DP-1
-#set $external HDMI-A-1
+#set $external DP-1
+set $external HDMI-A-1
 
 output * bg $bg fill
 output eDP-1 {
