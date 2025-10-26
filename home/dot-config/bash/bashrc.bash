@@ -1,4 +1,3 @@
-#cd ~/ws/bee
 alias neatvi='~/src/neatvi/vi'
 alias v="EXINIT='set noshape | set noorder | set nohl | set td=+2' neatvi"
 alias nvi=neatvi

@@ -1,4 +1,6 @@
 set nu rnu ic scs noet cb=unnamedplus
+set notgc
+color habamax
 "cc=80
 "color paramount | set bg=light
 set sts=2 sw=2

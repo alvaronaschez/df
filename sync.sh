@@ -2,3 +2,5 @@
 
 stow --dotfiles -R -t ~ -d ~/df/home .
 
+setupcon
+
