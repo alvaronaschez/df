@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-stow --dotfiles -R -t ~ -d ~/df/home .
+stow --dotfiles --restow --target=~ --dir=~/df/home .
 
 setupcon
 

@@ -8,8 +8,9 @@ set clipboard=unnamedplus
 
 augroup language_dependant_settings
 	autocmd!
+	autocmd Filetype c setlocal sw=2 sts=2 et fdm=syntax
 	autocmd Filetype python setlocal sw=4 sts=4 et fdm=indent
-	autocmd Filetype python setlocal sw=2 sts=2 et fdm=syntax
+	autocmd Filetype javascript\|typescript setlocal sw=2 sts=2 et fdm=syntax
 augroup END
 
 lua << EOF
