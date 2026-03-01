@@ -1,0 +1,23 @@
+# wm
+apt install sway swaylock swayidle xwayland wl-clipboard grimshot xdg-desktop-portal-wlr
+apt install waybar fonts-font-awesome fonts-material-design-icons-iconfont
+mkdir -p ~/.config/sway
+cp /etc/sway/config ~/.config/sway
+# swappy instead of grimshot?
+
+# network
+apt install network-manager
+cp ~/df/root/etc/NetworkManager/config.d/nm.config /etc/NetworkManager/config.d
+service NetworkManager restart
+
+# sound
+apt install pipewire-audio
+# wpctl
+
+# power: upower comes installed
+#apt install power-profiles-daemon
+#powerprofilesctl set <profile>
+
+# misc
+apt install man
+

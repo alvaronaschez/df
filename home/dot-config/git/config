@@ -1,0 +1,6 @@
+[user]
+	email = alvarosanchezpalomino@gmail.com
+	name = Alvaro Sanchez Palomino
+[push]
+	autoSetupRemote = true
+
