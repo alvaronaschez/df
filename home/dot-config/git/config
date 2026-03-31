@@ -1,6 +1,9 @@
 [user]
 	email = alvarosanchezpalomino@gmail.com
 	name = Alvaro Sanchez Palomino
+[init]
+	defaultBranch = master
+[core]
+	editor = vi
 [push]
 	autoSetupRemote = true
-

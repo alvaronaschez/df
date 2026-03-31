@@ -1,4 +1,4 @@
-# wm
+# window manager
 apt install sway swaylock swayidle xwayland wl-clipboard grimshot xdg-desktop-portal-wlr
 apt install waybar fonts-font-awesome fonts-material-design-icons-iconfont
 mkdir -p ~/.config/sway
@@ -13,6 +13,8 @@ service NetworkManager restart
 # sound
 apt install pipewire-audio
 # wpctl
+# wiremix?
+# pavucontrol
 
 # power: upower comes installed
 #apt install power-profiles-daemon
@@ -20,4 +22,7 @@ apt install pipewire-audio
 
 # misc
 apt install man
+
+sudo vi /etc/apt/sources.list
+# add contrib and non-free to the main repo
 
