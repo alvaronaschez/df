@@ -3,9 +3,8 @@ set keyseq-timeout 10
 bind 'Control-l: clear-screen'
 PS1='\[\e[32m\]\w \$ \[\e[0m\]'
 
-EDITOR=vi
-VISUAL=vi
-export $EDITOR $VISUAL
+export EDITOR=vi
+export VISUAL=vi
 
 alias ..='cd ..'
 alias la='ls -la'

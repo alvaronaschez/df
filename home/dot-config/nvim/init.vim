@@ -43,13 +43,13 @@ lua << EOF
 vim.lsp.enable('clangd')
 --vim.lsp.enable('jdtls')
 -- pip install "python-lsp-server[all]" && pip install pylsp-mypy
-vim.lsp.enable('pylsp')
+-- vim.lsp.enable('pylsp')
 -- npm install -g pyright
--- vim.lsp.enable('pyright')
+vim.lsp.enable('pyright')
 -- npm install -g typescript typescript-language-server
 --vim.lsp.enable('ts_ls')
 -- npm install -g @postgres-language-server/cli
 --vim.lsp.enable('postgres_lsp')
 -- apt install gopls
-vim.lsp.enable('gopls')
+--vim.lsp.enable('gopls')
 EOF
