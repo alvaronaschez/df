@@ -10,7 +10,7 @@ augroup language_dependant_settings
 	autocmd!
 	autocmd Filetype c\|cpp setlocal sw=2 sts=2 et fdm=syntax
 	autocmd Filetype python setlocal sw=4 sts=4 et fdm=indent
-	autocmd Filetype javascript\|typescript setlocal sw=2 sts=2 et fdm=syntax
+	autocmd Filetype java\|javascript\|typescript setlocal sw=2 sts=2 et fdm=syntax
 augroup END
 
 let g:c_syntax_for_h = 1 " this should be adjusted depending on the project: c -> 1, cpp -> 0
@@ -30,6 +30,8 @@ call plug#begin()
 	Plug 'pechorin/any-jump.vim'
 	Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 	Plug 'junegunn/fzf.vim'
+	" Plug 'mfussenegger/nvim-jdtls'
+	" Plug 'nvim-java/nvim-java'
 
 call plug#end()
 
@@ -41,15 +43,16 @@ call plug#end()
 lua << EOF
 -- apt install clangd
 vim.lsp.enable('clangd')
---vim.lsp.enable('jdtls')
--- pip install "python-lsp-server[all]" && pip install pylsp-mypy
--- vim.lsp.enable('pylsp')
+-- https://github.com/eclipse-jdtls/eclipse.jdt.ls
+vim.lsp.enable('jdtls')
 -- npm install -g pyright
 vim.lsp.enable('pyright')
+-- pip install "python-lsp-server[all]" && pip install pylsp-mypy
+-- vim.lsp.enable('pylsp')
 -- npm install -g typescript typescript-language-server
---vim.lsp.enable('ts_ls')
+-- vim.lsp.enable('ts_ls')
 -- npm install -g @postgres-language-server/cli
---vim.lsp.enable('postgres_lsp')
+-- vim.lsp.enable('postgres_lsp')
 -- apt install gopls
---vim.lsp.enable('gopls')
+-- vim.lsp.enable('gopls')
 EOF
