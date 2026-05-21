@@ -1,0 +1,53 @@
+set number relativenumber
+set ignorecase smartcase
+"set notermguicolors
+"set termguicolors
+set nofoldenable
+
+augroup language_dependant_settings
+	autocmd!
+	autocmd Filetype c\|cpp setlocal sw=2 sts=2 et fdm=syntax
+	autocmd Filetype python setlocal sw=4 sts=4 et fdm=indent
+	autocmd Filetype java\|javascript\|typescript setlocal sw=2 sts=2 et fdm=syntax
+augroup END
+
+let g:c_syntax_for_h = 1 " this should be adjusted depending on the project: c -> 1, cpp -> 0
+
+call plug#begin()
+	Plug 'tpope/vim-sensible'
+
+	Plug 'tpope/vim-fugitive'
+	"Plug 'airblade/vim-gitgutter'
+	Plug 'mhinz/vim-signify', { 'tag': 'legacy' }
+
+	Plug 'preservim/tagbar'
+
+	"Plug 'prabirshrestha/vim-lsp'
+	"Plug 'mattn/vim-lsp-settings'
+	Plug 'dense-analysis/ale'
+
+	Plug 'robertmeta/nofrils'
+call plug#end()
+
+set updatetime=100
+
+if empty($DISPLAY)
+	set background=dark
+	"color quiet
+	color nofrils-dark
+else
+	set clipboard=unnamedplus
+	set termguicolors
+	color nofrils-dark
+	"color nofrils-light
+	"color nofrils-acme
+endif
+
+" ALE
+set omnifunc=ale#completion#OmniFunc
+let g:ale_virtualtext_cursor = 'current'
+
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+" Set this in your vimrc file to disabling highlighting
+let g:ale_set_highlights = 0

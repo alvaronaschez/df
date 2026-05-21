@@ -16,6 +16,10 @@
       "rev": "6d808f99bd63303646794406e270bd553ad7792e",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "nofrils": {
+      "rev": "bad6e490846e098866136ef20fff31e99f428bb9",
+      "src": "https://github.com/robertmeta/nofrils"
+    },
     "nvim-lspconfig": {
       "rev": "bf5abe69c1874531f359a822d0cff4d73e26113f",
       "src": "https://github.com/neovim/nvim-lspconfig"

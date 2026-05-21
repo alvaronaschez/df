@@ -25,6 +25,8 @@ vim.pack.add({
   'https://github.com/preservim/tagbar',
   'https://github.com/tpope/vim-fugitive',
   'https://github.com/pechorin/any-jump.vim',
+
+  'https://github.com/robertmeta/nofrils',
   {
     src = 'https://github.com/junegunn/fzf',
     build = function()
@@ -59,3 +61,11 @@ vim.lsp.enable('pyright')
 
 -- apt install gopls
 -- vim.lsp.enable('gopls')
+
+-- rustup toolchain add rust-analyzer
+-- rustup update
+vim.lsp.enable('rust_analyzer')
+
+local on_attach = function(client, bufnr)
+  vim.treesitter.stop(bufnr)
+end

@@ -25,3 +25,5 @@ apt install man
 sudo vi /etc/apt/sources.list
 # add contrib and non-free to the main repo
 
+yazi
+evince
