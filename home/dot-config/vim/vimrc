@@ -51,3 +51,9 @@ highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 " Set this in your vimrc file to disabling highlighting
 let g:ale_set_highlights = 0
+
+let mapleader = " "
+let maplocalleader = " "
+nnoremap <silent> <leader>k :ALEHover<CR>
+nnoremap <silent> <leader>d :ALEGoToDefinition<CR>
+nnoremap <silent> <leader>r :ALEFindReferences<CR>
