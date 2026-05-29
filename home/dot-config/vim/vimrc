@@ -52,6 +52,9 @@ highlight clear ALEWarningSign
 " Set this in your vimrc file to disabling highlighting
 let g:ale_set_highlights = 0
 
+let g:ale_floating_preview = 1
+"let g:ale_hover_to_floating_preview = 1
+
 let mapleader = " "
 let maplocalleader = " "
 nnoremap <silent> <leader>k :ALEHover<CR>
