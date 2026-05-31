@@ -2,6 +2,7 @@ set number relativenumber
 set ignorecase smartcase
 "set notermguicolors
 "set termguicolors
+set clipboard=unnamedplus
 set nofoldenable
 
 augroup language_dependant_settings
@@ -27,6 +28,8 @@ call plug#begin()
 	Plug 'dense-analysis/ale'
 
 	Plug 'robertmeta/nofrils'
+
+	Plug 'jasonccox/vim-wayland-clipboard'
 call plug#end()
 
 set updatetime=100
