@@ -3,8 +3,12 @@ set keyseq-timeout 10
 bind 'Control-l: clear-screen'
 PS1='\[\e[32m\]\w \$ \[\e[0m\]'
 
+export EXINIT="$(printf 'led:&1\007:led')"
+alias vi=nextvi
+
 export EDITOR=vi
 export VISUAL=vi
 
 alias ..='cd ..'
 alias la='ls -la'
+
