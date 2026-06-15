@@ -11,4 +11,4 @@ export VISUAL=vi
 
 alias ..='cd ..'
 alias la='ls -la'
-
+alias l1='ls -1'
