@@ -49,9 +49,9 @@ vim.lsp.enable('clangd')
 vim.lsp.enable('jdtls')
 
 -- npm install -g pyright
-vim.lsp.enable('pyright')
+-- vim.lsp.enable('pyright')
 -- pip install "python-lsp-server[all]" && pip install pylsp-mypy
--- vim.lsp.enable('pylsp')
+vim.lsp.enable('pylsp')
 
 -- npm install -g typescript typescript-language-server
 -- vim.lsp.enable('ts_ls')
