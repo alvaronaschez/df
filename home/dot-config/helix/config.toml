@@ -1,0 +1,19 @@
+theme = "meliora"
+#theme = "flatwhite"
+#theme = "yellowed"
+
+[editor]
+line-number = "relative"
+
+[keys.normal]
+C-h = "move_char_left"
+C-j = "move_line_down"
+C-l = ":redraw"
+
+[keys.insert]
+"C-[" = "normal_mode"
+C-c = "normal_mode"
+C-i = "insert_tab"
+C-h = "delete_char_backward"
+C-j = "insert_newline"
+C-m = "insert_newline"
