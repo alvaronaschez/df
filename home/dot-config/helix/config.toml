@@ -1,5 +1,4 @@
-theme = "meliora"
-#theme = "flatwhite"
+theme = "default"
 #theme = "yellowed"
 
 [editor]
