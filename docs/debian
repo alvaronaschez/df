@@ -8,6 +8,7 @@ cp /etc/sway/config ~/.config/sway
 # network
 apt install network-manager
 cp ~/df/root/etc/NetworkManager/config.d/nm.config /etc/NetworkManager/config.d
+# comment out default connection in /etc/network/interfaces
 service NetworkManager restart
 
 # sound
