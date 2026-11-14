@@ -4,6 +4,6 @@
 [init]
 	defaultBranch = master
 [core]
-	editor = vi
+	editor = nvim
 [push]
 	autoSetupRemote = true

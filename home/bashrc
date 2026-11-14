@@ -6,9 +6,14 @@ PS1='\[\e[32m\]\w \$ \[\e[0m\]'
 # export EXINIT="$(printf 'led:&1\007:led')"
 # alias vi=nextvi
 
-export EDITOR=vi
-export VISUAL=vi
+export EDITOR=nvim
+export VISUAL=nvim
 
 alias ..='cd ..'
 alias la='ls -la'
 alias l1='ls -1'
+
+export PROMPT_COMMAND='history -a; history -n'
+export HISTCONTROL=ignoreboth:erasedups
+
+alias lvim='NVIM_APPNAME=lvim nvim'

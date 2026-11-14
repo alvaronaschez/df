@@ -34,6 +34,9 @@ vim.pack.add({
     end,
   },
   'https://github.com/junegunn/fzf.vim',
+
+  --'https://github.com/esmuellert/codediff.nvim',
+  'https://github.com/dlyongemallo/diffview-plus.nvim',
 })
 
 -- tagbar dependency
