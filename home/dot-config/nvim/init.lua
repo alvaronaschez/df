@@ -5,6 +5,8 @@ vim.cmd([[
   set clipboard=unnamedplus
   set nofoldenable
 
+  color slate
+
   set colorcolumn=80
   highlight ColorColumn cterm=NONE ctermbg=236
 
@@ -37,6 +39,18 @@ vim.pack.add({
 
   --'https://github.com/esmuellert/codediff.nvim',
   'https://github.com/dlyongemallo/diffview-plus.nvim',
+})
+
+vim.pack.add({
+  {
+    src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
+    version = vim.version.range('3')
+  },
+  -- dependencies
+  "https://github.com/nvim-lua/plenary.nvim",
+  "https://github.com/MunifTanjim/nui.nvim",
+  -- optional, but recommended
+  "https://github.com/nvim-tree/nvim-web-devicons",
 })
 
 -- tagbar dependency
